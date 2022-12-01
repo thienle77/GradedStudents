@@ -39,6 +39,21 @@ public class Student {
         return examScores.size();
     }
 
-    public String getExamScores() {
+    public Double[] getExamScores() {
+        return null;
     }
+
+    public Double[] setExamScores(int  examNumber, double newScore){
+        return null;
+    }
+
+    public Double[] addExamScores(double examScore){
+        return null;
+    }
+
+    public Double[] getAverageExamScores(){
+        return null;
+    }
+
 }
+
