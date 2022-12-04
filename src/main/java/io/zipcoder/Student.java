@@ -55,8 +55,17 @@ public class Student {
         examScores.set(examNumber-1, newScore);
     }
 
-
-
-
+    public Double getAverageExamScore() {
+        double sum = 0;
+        for (int i = 0; i < getNumberOfExamsTaken(); i++) {
+            sum += examScores.get(i);
+        }
+        return sum / getNumberOfExamsTaken();
+    }
+    @Override
+    public String toString() {
+        return "Student name :" + getFirstName() + " " + getLastName() + "\n" +
+                "Average score:" + getAverageExamScore() + "\n" + getExamScores();
+    }
 }
 
