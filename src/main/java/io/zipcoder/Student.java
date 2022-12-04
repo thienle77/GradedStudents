@@ -39,21 +39,24 @@ public class Student {
         return examScores.size();
     }
 
-    public Double[] getExamScores() {
-        return null;
+    public String getExamScores() {
+        String scores = "";
+        for (int i = 0; i < getNumberOfExamsTaken(); i++) {
+            scores += ("Exam " + (i + 1) + " -> " + examScores.get(i) + "\n");
+        }
+        return scores;
     }
 
-    public Double[] setExamScores(int  examNumber, double newScore){
-        return null;
+    public void addExamScore(double examScore) {
+        examScores.add(examScore);
     }
 
-    public Double[] addExamScores(double examScore){
-        return null;
+    public void setExamScore(int examNumber, double newScore) {
+        examScores.set(examNumber-1, newScore);
     }
 
-    public Double[] getAverageExamScores(){
-        return null;
-    }
+
+
 
 }
 
