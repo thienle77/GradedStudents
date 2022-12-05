@@ -28,8 +28,15 @@ public class Classroom {
 
     }
 
-    public void addStudent(Student student) {
+    public void addStudent(Student students) {
+        students.addExamScore(getAverageExamScore());
+    }
 
+    public void removeStudent(String firstName, String lastName) {
+    }
+
+    public String[] getStudentByScore() {
+        return null;
     }
 
 
