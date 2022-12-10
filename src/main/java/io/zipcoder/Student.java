@@ -40,7 +40,7 @@ public class Student {
     }
 
     public String getExamScores() {
-        String scores = "";
+        String scores = "Exam Scores:\n";
         for (int i = 0; i < getNumberOfExamsTaken(); i++) {
             scores += ("Exam " + (i + 1) + " -> " + examScores.get(i) + "\n");
         }
@@ -64,8 +64,9 @@ public class Student {
     }
     @Override
     public String toString() {
-        return "Student name :" + getFirstName() + " " + getLastName() + "\n" +
-                "Average score:" + getAverageExamScore() + "\n" + getExamScores();
+        //return "Student name :" + getFirstName() + " " + getLastName() + "\n" +
+               // "Average score:" + getAverageExamScore() + "\n" + getExamScores();
+        return getExamScores();
     }
 }
 
